@@ -1,0 +1,7 @@
+ultralytics
+opencv-python
+numpy
+pandas
+pillow
+fast-alpr[onnx]
+fast-plate-ocr

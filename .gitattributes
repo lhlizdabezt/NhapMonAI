@@ -1,0 +1,5 @@
+AppPythonYOLO_OCR/ffmpeg/bin/*.exe filter=lfs diff=lfs merge=lfs -text
+AppPythonYOLO_OCR/*.pt filter=lfs diff=lfs merge=lfs -text
+AppPythonYOLO_OCR/*.7z filter=lfs diff=lfs merge=lfs -text
+AppPythonYOLO_OCR/*.zip filter=lfs diff=lfs merge=lfs -text
+AppPythonPlateGatePC/*.zip filter=lfs diff=lfs merge=lfs -text

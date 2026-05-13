@@ -1,0 +1,17 @@
+{
+  "model": "D:\\best.pt",
+  "input": "E:/HinhDemo/ngkhtrf_vietnamese_number_plate_detection_for_yolo_0000005_Dieu_0056.png",
+  "preset": "Balanced",
+  "encoder": "Auto",
+  "ocr_backend": "Auto",
+  "det_conf": 0.24,
+  "min_reliability": 0.38,
+  "max_show": 4,
+  "imgsz": 768,
+  "crop_pad": 0.08,
+  "only_valid_vn": false,
+  "show_unknown": false,
+  "heavy_scan": true,
+  "classical_fallback": false,
+  "anti_sign_guard": true
+}
