@@ -1,159 +1,175 @@
 # NhapMonAI
 
-Đồ án Nhập môn Trí tuệ Nhân tạo của Nhóm 5 về hệ thống phát hiện và nhận dạng biển số xe Việt Nam. Repository này gom đủ notebook huấn luyện, mô hình YOLO, ứng dụng Python OCR, ứng dụng PC mô phỏng mở trạm, báo cáo seminar, slide/hình minh họa và source Typst của báo cáo.
+<p align="center">
+  <img src="assets/alpr-pipeline-motion.gif" alt="Animated NhapMonAI YOLO OCR pipeline" width="900" />
+</p>
 
-![Python GUI](HinhAnhBaoCao/AppPython/GUIPython.png)
+<p align="center">
+  <a href="https://github.com/lhlizdabezt/NhapMonAI/releases/latest">
+    <img src="https://img.shields.io/github/v/release/lhlizdabezt/NhapMonAI?style=for-the-badge&logo=github&label=release" alt="Latest release" />
+  </a>
+  <img src="https://img.shields.io/badge/HCMUS-FETEL%2022DTV__CLC1-2563eb?style=for-the-badge" alt="HCMUS FETEL 22DTV CLC1" />
+  <img src="https://img.shields.io/badge/AI-YOLO%20%2B%20OCR-0f766e?style=for-the-badge" alt="YOLO OCR" />
+  <img src="https://img.shields.io/badge/Apps-Python%20Desktop%20%2B%20PC%20Gate-D95319?style=for-the-badge" alt="Python desktop and PC gate apps" />
+  <img src="https://img.shields.io/badge/Docs-Typst%20Report%20%2B%20Slides-334155?style=for-the-badge" alt="Typst report and slides" />
+</p>
 
-## Điểm nổi bật
+<p align="center">
+  <b>Vehicle License Plate Detection and Recognition Using YOLO and OCR on the Vietnamese License Plates Detection Dataset</b><br/>
+  <sub>Group 05 - Introduction to Artificial Intelligence - VNUHCM University of Science, Faculty of Electronics and Telecommunications</sub>
+</p>
 
-- Huấn luyện mô hình YOLO cho bài toán phát hiện biển số xe Việt Nam.
-- Nhận dạng ký tự biển số bằng OCR, hỗ trợ FastALPR DefaultOCR và `fast_plate_ocr`.
-- Ứng dụng Python desktop xử lý ảnh đơn, thư mục ảnh và video.
-- Tích hợp FFmpeg để xuất video kết quả có annotate.
-- Ứng dụng PC Gate nhận dữ liệu biển số qua HTTP và kiểm tra danh sách biển được phép.
-- Notebook Kaggle cho hai giai đoạn: huấn luyện từ đầu và tiếp tục huấn luyện từ checkpoint.
-- Bộ báo cáo, hình ảnh kết quả, confusion matrix, source Typst và PDF seminar.
+## 🚀 Project Snapshot
 
-## Cấu trúc repository
+`NhapMonAI` is an end-to-end applied AI coursework project for Vietnamese vehicle license plate detection and recognition. The repository packages the full engineering trail: Kaggle notebooks, YOLO checkpoints, Python desktop OCR app, PC gate-control demo, Typst report source, seminar PDF, slides and visual evidence.
+
+| Area | Evidence |
+| --- | --- |
+| Problem | Detect Vietnamese license plates, crop plate regions, run OCR, normalize plate text and export annotated results |
+| AI stack | YOLO / Ultralytics, OpenCV, FastALPR DefaultOCR, `fast_plate_ocr`, Python |
+| Applications | Desktop image/video OCR tool and LAN-based PC gate-control demo |
+| Academic assets | Typst report source, PDF report, seminar slides, result figures, notebook logs |
+| Portfolio signal | Reproducible file structure, Git LFS for large model/binary assets, release packaging and documented limitations |
+
+## 🧠 Results
+
+The continuation checkpoint reported in the final report reaches:
+
+| Metric | Validation result |
+| --- | ---: |
+| Precision | `0.99448` |
+| Recall | `0.99373` |
+| mAP50 | `0.99450` |
+| mAP50-95 | `0.77006` |
+
+The detector performs strongly on the project validation split, while the README and report intentionally keep the OCR and real-world deployment limitations explicit. This project is a course-grade proof of concept, not a production traffic-control system.
+
+## 🖼️ Visual Evidence
+
+| Python Desktop App | YOLO + OCR Video Pipeline |
+| --- | --- |
+| ![Python desktop GUI](Group5_BaoCaoNhapMonAI/assets/python_gui.png) | ![YOLO OCR video result](Group5_BaoCaoNhapMonAI/assets/video_yolo_ocr_fastalpr.png) |
+
+| Confusion Matrix | Android / Gate Demo |
+| --- | --- |
+| ![Confusion matrix](Group5_BaoCaoNhapMonAI/assets/confusion_matrix.png) | ![Android gate scan demo](Group5_BaoCaoNhapMonAI/assets/android_gate_scan_demo.jpg) |
+
+## 🗂️ Repository Structure
 
 ```text
 NhapMonAI/
-|-- AppPythonYOLO_OCR/                  # App Python YOLO + OCR, FFmpeg, model và demo assets
-|-- AppPythonPlateGatePC/               # App PC Gate nhận biển số qua HTTP và kiểm tra allow-list
-|-- Group5_Notebook_IPYNB/              # Notebook huấn luyện và continuation training
-|-- Group5_BaoCaoNhapMonAI/             # Source Typst của báo cáo
-|-- HinhAnhBaoCao/                      # Hình minh họa, biểu đồ, demo app
-|-- Group5_BaoCaoSeminarNhapMonAI.pdf   # PDF báo cáo seminar
-|-- v65.pt                              # Checkpoint YOLO chính
-|-- vip pro level max python.py         # Bản app Python OCR đơn file
+|-- AppPythonYOLO_OCR/                 # Python YOLO + OCR desktop app, demo outputs, FFmpeg and checkpoints
+|-- AppPythonPlateGatePC/              # PC gate-control demo receiving plate scans over HTTP
+|-- Group5_Notebook_IPYNB/             # Kaggle notebooks for first training and continuation training
+|-- Group5_BaoCaoNhapMonAI/            # Typst source, figures, bibliography and report assets
+|-- HinhAnhBaoCao/                     # Presentation-ready visual evidence
+|-- Academic_Deliverables/             # Seminar slide deck and work-assignment PDF
+|-- assets/                            # README motion/visual assets
+|-- Group5_BaoCaoSeminarNhapMonAI.pdf  # Final seminar report PDF
+|-- v65.pt                             # Main YOLO checkpoint
 `-- README.md
 ```
 
-## Ứng dụng Python YOLO OCR
+## ⚙️ Quick Start
 
-Source chính nằm trong:
+Install Git LFS before cloning because the repo contains checkpoints and app bundles:
 
-```text
-AppPythonYOLO_OCR/
+```bash
+git lfs install
+git clone https://github.com/lhlizdabezt/NhapMonAI.git
+cd NhapMonAI
+git lfs pull
 ```
 
-Các file đáng chú ý:
-
-- `Group5_AppPython_YOLO_OCR.py`: app Python desktop chính.
-- `app python vip pro kkkkkjsadljk.py`: bản app OCR nâng cấp/đơn file.
-- `requirements.txt`: danh sách thư viện cần cài.
-- `best.pt`, `best (1).pt`: checkpoint YOLO đi kèm app.
-- `ffmpeg/bin/`: FFmpeg, FFprobe và FFplay phục vụ xử lý video.
-- `outputs_hcmus_image_first_final/`: kết quả demo đã xuất ra từ app.
-
-Cài thư viện:
+Run the main Python OCR app:
 
 ```bash
 cd AppPythonYOLO_OCR
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-```
-
-Chạy app:
-
-```bash
 python Group5_AppPython_YOLO_OCR.py
 ```
 
-Hoặc chạy bằng batch file trên Windows:
+Windows shortcut:
 
 ```bash
+cd AppPythonYOLO_OCR
 run_Group5_AppPython_YOLO_OCR.bat
 ```
 
-Trong giao diện, chọn model YOLO `.pt`, chọn ảnh/video/thư mục ảnh đầu vào, sau đó chạy nhận dạng. Kết quả được lưu trong thư mục output của app.
-
-## Ứng dụng PC Gate
-
-Source nằm trong:
-
-```text
-AppPythonPlateGatePC/PlateGatePC/
-```
-
-Ứng dụng này mô phỏng trạm PC nhận biển số từ thiết bị/app khác qua HTTP:
-
-- Endpoint kiểm tra trạng thái: `GET /health`
-- Endpoint nhận kết quả scan: `POST /scan`
-- Port mặc định: `8765`
-- File allow-list: `bien_so_duoc_phep.txt`
-
-Chạy app:
+Run the PC gate-control demo:
 
 ```bash
 cd AppPythonPlateGatePC/PlateGatePC
 python Group5_AppPYMoRongThucTe.py
 ```
 
-Hoặc chạy nhanh trên Windows:
+Default endpoints:
 
-```bash
-mo_tram_pc.bat
-```
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /health` | Check server status |
+| `POST /scan` | Submit detected plate text |
+| Port `8765` | Local LAN demo port |
+| `bien_so_duoc_phep.txt` | Allow-list for gate decisions |
 
-## Notebook huấn luyện
+## 📓 Notebooks
 
-Notebook nằm trong `Group5_Notebook_IPYNB/`:
+| Notebook | Purpose |
+| --- | --- |
+| `Group5_Notebook_IPYNB/Group5_Notebook01_FirstTraining.ipynb` | First YOLO training run from scratch |
+| `Group5_Notebook_IPYNB/Group5_Notebook02_ContinuationTraining.ipynb` | Continuation training from checkpoint |
+| `AppPythonYOLO_OCR/group-5-vietnamese-license-plates-detection-lhl.ipynb` | Kaggle-oriented experiment notebook and output trace |
 
-- `Group5_Notebook01_FirstTraining.ipynb`: huấn luyện YOLO từ đầu cho 25 epoch.
-- `Group5_Notebook02_ContinuationTraining.ipynb`: tiếp tục huấn luyện từ checkpoint để cải thiện kết quả.
+The notebooks were designed for Kaggle paths. When running outside Kaggle, update dataset, checkpoint and output paths before executing cells.
 
-Notebook được thiết kế theo môi trường Kaggle. Khi chạy lại ở môi trường khác, cần chỉnh đường dẫn dataset, checkpoint và thư mục output cho phù hợp.
+## 👥 Team
 
-## Báo cáo và tài liệu
+| Student ID | Name |
+| --- | --- |
+| `22207043` | Mai Xuân Khang |
+| `22207106` | Trương Quang Vũ |
+| `22207112` | Lý Phi Hùng |
+| `22207063` | Văn Đình Nam |
+| `22207062` | Trần Sĩ Nam |
+| `22207056` | Lương Hải Long |
+| `22207066` | Lê Tấn Phi Pha |
 
-- `Group5_BaoCaoSeminarNhapMonAI.pdf`: bản PDF báo cáo seminar.
-- `Group5_BaoCaoNhapMonAI/`: source Typst của báo cáo, gồm `main.typ`, `config.typ`, `src/`, `assets/`, `fonts/` và file bibliography.
-- `HinhAnhBaoCao/`: hình ảnh dùng trong báo cáo và demo.
+## 🧰 Tech Stack
 
-## Kết quả minh họa
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,opencv,tensorflow,pytorch,git,github,vscode,linux,latex&perline=9" alt="Tech stack icons" />
+</p>
 
-### Confusion Matrix
+- Python, Tkinter, OpenCV, NumPy, Pandas, Pillow
+- YOLO / Ultralytics model training and inference
+- FastALPR DefaultOCR and `fast_plate_ocr`
+- FFmpeg / FFprobe / FFplay for video handling
+- Kaggle Notebook workflow
+- Typst report source and academic PDF packaging
+- GitHub CLI, Git LFS, releases and tags
 
-![Confusion Matrix](HinhAnhBaoCao/confusion_matrix.png)
+## 📦 Release Assets
 
-### Kết quả continuation training
+The GitHub release is intended as the HR/reviewer entry point:
 
-![Training Results](HinhAnhBaoCao/resultsOfVersion65ContinueFromCheckpoint.png)
+- Final seminar PDF
+- Seminar slide deck
+- Python OCR source/app bundle
+- PC gate-control source/app bundle
+- Android APK demo package, when distributed as a release asset
+- Git tag `v1.0.0` for the submitted portfolio snapshot
 
-### Demo OCR
+## 📌 Notes
 
-![OCR Demo](HinhAnhBaoCao/DemoFromNotebook/OCRDemo.png)
+- The repository keeps large binary assets in Git LFS where appropriate.
+- Raw dataset archives are intentionally not treated as the main public review surface; dataset references and demo outputs are documented instead.
+- Some code paths in notebooks and apps may need adjustment on another machine, especially dataset paths, checkpoint paths and FFmpeg paths.
+- No explicit open-source license has been added yet, so treat this as an academic portfolio archive unless a license is added later.
 
-### Demo Android
+---
 
-![Android Camera Mode](HinhAnhBaoCao/AppAndroid/AndroidCameraMode.jpg)
-
-## Model và file lớn
-
-Repository có chứa model, file nén và binary FFmpeg. Các file lớn mới được quản lý bằng Git LFS để tránh giới hạn file của GitHub.
-
-Sau khi clone, nên chạy:
-
-```bash
-git lfs install
-git lfs pull
-```
-
-Nếu chưa cài Git LFS, tải từ trang chính thức của Git LFS hoặc cài qua package manager phù hợp với hệ điều hành.
-
-## Công nghệ sử dụng
-
-- Python
-- YOLO / Ultralytics
-- OpenCV
-- FastALPR
-- fast_plate_ocr
-- FFmpeg
-- NumPy, Pandas, Pillow
-- Kaggle Notebook
-- Typst
-
-## Ghi chú
-
-Project này phục vụ học phần Nhập môn Trí tuệ Nhân tạo. Một số đường dẫn trong notebook/app có thể cần chỉnh lại khi chạy trên máy khác, đặc biệt là đường dẫn dataset Kaggle, checkpoint YOLO và thư mục FFmpeg.
+<p align="center">
+  <b>Built by Group 05 for Introduction to Artificial Intelligence - HCMUS FETEL.</b><br/>
+  <sub>From detector training to OCR demo to a reviewable engineering portfolio.</sub>
+</p>
