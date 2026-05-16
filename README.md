@@ -21,6 +21,10 @@
   <sub>Nhóm 05 - Khoa Điện tử Viễn thông - Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM</sub>
 </p>
 
+<p align="center">
+  <img src="assets/alpr-review-card.svg" alt="Thẻ tóm tắt portfolio cho dự án NhapMonAI" width="900" />
+</p>
+
 ---
 
 ## 🚦 Điểm vào đánh giá nhanh
@@ -34,6 +38,17 @@
 | Bộ dữ liệu Google Drive | [VietnameseLicensePlatesDetectionDataset](https://drive.google.com/drive/folders/1xBDnh_NdHC5JePgazb0ZRDhu6Jpbo3sT?usp=drive_link) | Nguồn dữ liệu nhóm dùng để tổ chức huấn luyện, kiểm thử và minh họa |
 | FastALPR tham khảo | [ankandrew/fast-alpr](https://github.com/ankandrew/fast-alpr) | Bộ khung ALPR hiệu năng cao để tham chiếu luồng OCR, mô hình ONNX và cách tổ chức giao diện lập trình |
 | Hồ sơ cá nhân | [Lương Hải Long trên GitHub](https://github.com/lhlizdabezt) | Bối cảnh năng lực: Điện tử Viễn thông, Python, AI/OCR, FPGA/SoC, C/C++, MATLAB, IPYNB |
+
+---
+
+## 🎯 Hồ sơ đánh giá
+
+| Góc đánh giá | Nội dung |
+| --- | --- |
+| Loại dự án | Đồ án học phần Nhập môn Trí tuệ Nhân tạo, Nhóm 05, HCMUS FETEL |
+| Điểm mạnh kỹ thuật | Có đủ notebook, checkpoint, app desktop, demo cổng PC, báo cáo Typst, hình kết quả, release và metadata GitHub |
+| Vai trò portfolio của Lương Hải Long | Duy trì repo public, chuẩn hóa README/release/tags/topics, liên kết Kaggle/dataset/FastALPR và đóng gói minh chứng để reviewer kiểm tra nhanh |
+| Phạm vi trung thực | Nguyên mẫu học thuật trên dữ liệu và môi trường nhóm đã dùng; chưa tự nhận là hệ thống giao thông sản xuất |
 
 ---
 
@@ -188,7 +203,7 @@ python Group5_AppPYMoRongThucTe.py
 | `22207112` | Lý Phi Hùng | Thành viên Nhóm 05 |
 | `22207063` | Văn Đình Nam | Thành viên Nhóm 05 |
 | `22207062` | Trần Sĩ Nam | Thành viên Nhóm 05 |
-| `22207056` | [Lương Hải Long](https://github.com/lhlizdabezt) | GitHub portfolio, Kaggle notebook, app Python, README/bản phát hành và đóng gói minh chứng |
+| `22207056` | [Lương Hải Long](https://github.com/lhlizdabezt) | GitHub portfolio, Kaggle notebook, app Python, README, bản phát hành, tags/topics và đóng gói minh chứng |
 | `22207066` | Lê Tấn Phi Pha | Thành viên Nhóm 05 |
 
 ---
