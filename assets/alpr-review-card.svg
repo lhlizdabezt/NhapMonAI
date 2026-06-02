@@ -35,7 +35,7 @@
     <rect x="784" y="176" width="222" height="72" rx="18" fill="#fee2e2"/>
     <text x="812" y="220" fill="#0f172a">Release + Git LFS</text>
   </g>
-  <path d="M540 286 H998" stroke="#e2e8f0" stroke-width="2" opacity="0.55"/>
-  <text x="532" y="316" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Input -> Plate crop -> OCR -> Annotated result -> PC gate review</text>
+  <rect x="532" y="286" width="502" height="72" rx="18" fill="#020617" opacity="0.22"/>
+  <text x="532" y="316" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Input -> Crop -> OCR -> Annotated output -> Gate review</text>
   <text x="532" y="346" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">Course prototype: academic validation, not production traffic enforcement.</text>
 </svg>
