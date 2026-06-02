@@ -1,45 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Vietnamese ALPR with YOLO and OCR animated portfolio visual</title>
-  <desc id="desc">Animated SVG visual summarizing NhapMonAI for GitHub portfolio review.</desc>
-  <style>
-    .bg { fill: #0f172a; }
-    .panel { fill: #111827; stroke: #38bdf8; stroke-width: 2; }
-    .panel2 { fill: #172554; stroke: #f59e0b; stroke-width: 2; }
-    .title { font: 800 34px Segoe UI, Arial, sans-serif; fill: #f8fafc; }
-    .subtitle { font: 600 22px Segoe UI, Arial, sans-serif; fill: #bae6fd; }
-    .body { font: 500 18px Segoe UI, Arial, sans-serif; fill: #dbeafe; }
-    .small { font: 700 16px Segoe UI, Arial, sans-serif; fill: #0f172a; }
-    .chip { fill: #f8fafc; }
-    .node { fill: #22d3ee; }
-    .node2 { fill: #f59e0b; }
-    .wire { stroke: #93c5fd; stroke-width: 5; stroke-linecap: round; }
-    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
-    @keyframes pulse { 0%, 100% { opacity: .55; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
-  </style>
-  <rect class="bg" width="1200" height="360" rx="28" />
-  <circle cx="1040" cy="72" r="42" fill="#1e293b" />
-  <circle class="pulse" cx="1040" cy="72" r="24" fill="#38bdf8" opacity=".85" />
-  <rect x="50" y="48" width="760" height="118" rx="20" class="panel" />
-  <text x="82" y="105" class="title">Vietnamese ALPR with YOLO and OCR</text>
-  <text x="84" y="143" class="subtitle">Computer vision and machine learning project</text>
-  <rect x="850" y="48" width="300" height="118" rx="20" class="panel2" />
-  <text x="878" y="92" class="subtitle">Portfolio Signal</text>
-  <text x="878" y="127" class="body">English - visual - release</text>
-  <path d="M120 236 C 250 180, 360 292, 500 236 S 750 180, 900 236 S 1060 292, 1120 236" class="wire" fill="none" />
+  <title id="title">NhapMonAI line-free portfolio visual</title>
+  <desc id="desc">English ASCII-safe SVG visual for NhapMonAI without moving connector lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <style>
+      .title { font: 800 34px Segoe UI, Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+      .subtitle { font: 650 19px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+      .chipText { font: 800 15px Segoe UI, Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+      .caption { font: 700 16px Segoe UI, Arial, sans-serif; fill: #e2e8f0; letter-spacing: 0; }
+      .panel { fill: rgba(15,23,42,.54); stroke: rgba(255,255,255,.20); stroke-width: 1.2; }
+      .pulse { animation: pulse 3.4s ease-in-out infinite; transform-origin: center; }
+      .soft { animation: soft 4.8s ease-in-out infinite; transform-origin: center; }
+      @keyframes pulse { 0%, 100% { opacity: .78; transform: scale(.99); } 50% { opacity: 1; transform: scale(1.02); } }
+      @keyframes soft { 0%, 100% { opacity: .68; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+  <rect width="1200" height="360" rx="26" fill="url(#bg)" />
+  <rect x="38" y="34" width="1124" height="292" rx="22" class="panel" />
+  <text x="72" y="66" class="title">NhapMonAI</text>
+  <text x="72" y="96" class="subtitle">Vietnamese ALPR project using YOLO/PyTorch and OCR/FastALPR with</text>
+  <text x="72" y="124" class="subtitle">Kaggle/IPYNB training evidence, desktop inference and LAN demo.</text>
   <g>
-    <circle class="node pulse" cx="140" cy="236" r="28" />
-    <circle class="node2 pulse" cx="380" cy="236" r="28" />
-    <circle class="node pulse" cx="620" cy="236" r="28" />
-    <circle class="node2 pulse" cx="860" cy="236" r="28" />
-    <circle class="node pulse" cx="1080" cy="236" r="28" />
+    <g class="pulse"><rect x="89" y="248" width="190" height="48" rx="16" fill="#e0f2fe" /><text x="184.0" y="278" text-anchor="middle" class="chipText">computer vision</text></g>
+    <g class="pulse"><rect x="297" y="248" width="190" height="48" rx="16" fill="#dcfce7" /><text x="392.0" y="278" text-anchor="middle" class="chipText">kaggle</text></g>
+    <g class="pulse"><rect x="505" y="248" width="190" height="48" rx="16" fill="#fef9c3" /><text x="600.0" y="278" text-anchor="middle" class="chipText">ocr</text></g>
+    <g class="pulse"><rect x="713" y="248" width="190" height="48" rx="16" fill="#fee2e2" /><text x="808.0" y="278" text-anchor="middle" class="chipText">yolo</text></g>
+    <g class="pulse"><rect x="921" y="248" width="190" height="48" rx="16" fill="#dbeafe" /><text x="1016.0" y="278" text-anchor="middle" class="chipText">opencv</text></g>
   </g>
-  <g>
-    <rect x="74" y="278" width="138" height="34" rx="17" class="chip" /><text x="143" y="301" text-anchor="middle" class="small">Python</text>
-    <rect x="300" y="278" width="160" height="34" rx="17" class="chip" /><text x="380" y="301" text-anchor="middle" class="small">YOLO</text>
-    <rect x="532" y="278" width="176" height="34" rx="17" class="chip" /><text x="620" y="301" text-anchor="middle" class="small">PyTorch</text>
-    <rect x="774" y="278" width="172" height="34" rx="17" class="chip" /><text x="860" y="301" text-anchor="middle" class="small">OpenCV</text>
-    <rect x="1000" y="278" width="160" height="34" rx="17" class="chip" /><text x="1080" y="301" text-anchor="middle" class="small">FastALPR</text>
-  </g>
-  <text x="66" y="200" class="body">Vietnamese automatic license plate recognition workflow using YOLO detection and OCR.</text>
-  <text x="66" y="330" class="body">Includes Kaggle/IPYNB training evidence, Python desktop inference and LAN demo scope.</text>
+  <rect x="72" y="304" width="1056" height="28" rx="14" fill="rgba(15,23,42,.58)" />
+  <text x="600.0" y="323" text-anchor="middle" class="caption">English visual asset - no connector lines - release-backed portfolio evidence</text>
 </svg>

@@ -1,16 +1,16 @@
-# Visual Line Safety Fix - 2026-06-02
+# Line-Free Visual Safety Pass - 2026-06-02
 
 ## Scope
 
-This update keeps `NhapMonAI` aligned with the English-facing engineering portfolio while removing dash-line motion from SVG visuals.
+This release refreshes `NhapMonAI` SVG visuals for English-facing GitHub portfolio review.
 
 ## Changes
 
-- Cleaned `assets/portfolio-motion.svg` so SVG motion no longer uses moving dashed or dotted line effects.
-- Adjusted portfolio-card title sizing so long English project names fit without clipping.
-- Preserved ASCII-safe English SVG text and existing non-line motion such as pulse, shimmer, float or scan effects.
-- Kept repository claims evidence-first and bounded to the source tree, reports, releases and visual assets.
+- Replaced line-based SVG motion with card-based, line-free visual layouts.
+- Kept SVG text English and ASCII-safe.
+- Removed connector-line, dashed-line, dotted-line and scan-line patterns from generated visual assets.
+- Preserved the repository description, topics, source files and release-backed evidence model.
 
 ## Review Context
 
-The latest release points to the commit containing this visual cleanup, so GitHub README embeds and release assets can be reviewed from a stable tag.
+The updated visuals are designed for GitHub README rendering, mobile review and HR or engineering portfolio screening.
