@@ -5,16 +5,15 @@
     .bg { fill: #0f172a; }
     .panel { fill: #111827; stroke: #38bdf8; stroke-width: 2; }
     .panel2 { fill: #172554; stroke: #f59e0b; stroke-width: 2; }
-    .title { font: 800 42px Segoe UI, Arial, sans-serif; fill: #f8fafc; }
+    .title { font: 800 34px Segoe UI, Arial, sans-serif; fill: #f8fafc; }
     .subtitle { font: 600 22px Segoe UI, Arial, sans-serif; fill: #bae6fd; }
     .body { font: 500 18px Segoe UI, Arial, sans-serif; fill: #dbeafe; }
     .small { font: 700 16px Segoe UI, Arial, sans-serif; fill: #0f172a; }
     .chip { fill: #f8fafc; }
     .node { fill: #22d3ee; }
     .node2 { fill: #f59e0b; }
-    .wire { stroke: #93c5fd; stroke-width: 5; stroke-linecap: round; stroke-dasharray: 18 16; animation: dash 3s linear infinite; }
+    .wire { stroke: #93c5fd; stroke-width: 5; stroke-linecap: round; }
     .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
-    @keyframes dash { to { stroke-dashoffset: -136; } }
     @keyframes pulse { 0%, 100% { opacity: .55; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
   </style>
   <rect class="bg" width="1200" height="360" rx="28" />

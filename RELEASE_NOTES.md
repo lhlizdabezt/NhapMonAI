@@ -1,18 +1,16 @@
-# English Visual Portfolio Refresh - 2026-06-02
+# Visual Line Safety Fix - 2026-06-02
 
 ## Scope
 
-This refresh keeps `NhapMonAI` aligned with an English-facing engineering portfolio for HR and technical review.
+This update keeps `NhapMonAI` aligned with the English-facing engineering portfolio while removing dash-line motion from SVG visuals.
 
 ## Changes
 
-- Added an ASCII-safe animated SVG visual under `assets/portfolio-motion.svg`.
-- Embedded the visual in `README.md` for immediate GitHub rendering.
-- Standardized Markdown and binary asset handling through `.gitattributes`.
-- Kept the repository description evidence-first and scoped to: Computer vision and machine learning project.
+- Cleaned `assets/portfolio-motion.svg` so SVG motion no longer uses moving dashed or dotted line effects.
+- Adjusted portfolio-card title sizing so long English project names fit without clipping.
+- Preserved ASCII-safe English SVG text and existing non-line motion such as pulse, shimmer, float or scan effects.
+- Kept repository claims evidence-first and bounded to the source tree, reports, releases and visual assets.
 
 ## Review Context
 
-Primary stack: Python, YOLO, PyTorch, OpenCV, FastALPR, Kaggle, Tkinter, FFmpeg.
-
-The repository remains bounded to its real artifacts and does not claim production ownership beyond what the source tree, reports, code or release assets can support.
+The latest release points to the commit containing this visual cleanup, so GitHub README embeds and release assets can be reviewed from a stable tag.
