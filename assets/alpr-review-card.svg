@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
   <title id="title">NhapMonAI ALPR portfolio review card</title>
-  <desc id="desc">ASCII safe SVG card for the NhapMonAI YOLO OCR project.</desc>
+  <desc id="desc">ASCII safe SVG card for reviewer-ready NhapMonAI YOLO OCR evidence.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0f172a"/>
@@ -15,15 +15,16 @@
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.35"/>
     </filter>
   </defs>
-  <rect width="1100" height="360" rx="28" fill="url(#bg)"/>
-  <rect x="32" y="32" width="1036" height="296" rx="22" fill="#ffffff" opacity="0.08"/>
-  <rect x="60" y="64" width="420" height="232" rx="20" fill="#020617" opacity="0.42" filter="url(#softShadow)"/>
+  <rect width="1100" height="390" rx="28" fill="url(#bg)"/>
+  <rect x="32" y="32" width="1036" height="326" rx="22" fill="#ffffff" opacity="0.08"/>
+  <rect x="60" y="64" width="420" height="262" rx="20" fill="#020617" opacity="0.42" filter="url(#softShadow)"/>
   <text x="84" y="112" fill="#e0f2fe" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">NhapMonAI</text>
-  <text x="84" y="150" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Vietnamese ALPR Portfolio</text>
+  <text x="84" y="150" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Vietnamese ALPR Evidence</text>
   <text x="84" y="190" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="17">YOLO detector + OCR normalization</text>
   <text x="84" y="220" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="17">Kaggle notebook + FastALPR reference</text>
   <text x="84" y="250" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="17">Python desktop app + PC gate demo</text>
-  <rect x="84" y="270" width="256" height="10" rx="5" fill="url(#accent)"/>
+  <text x="84" y="280" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="17">Report, release assets, Git LFS</text>
+  <rect x="84" y="300" width="256" height="10" rx="5" fill="url(#accent)"/>
   <g font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">
     <rect x="532" y="70" width="214" height="72" rx="18" fill="#e0f2fe"/>
     <text x="560" y="114" fill="#0f172a">YOLO mAP50 0.99450</text>
@@ -34,6 +35,7 @@
     <rect x="784" y="176" width="222" height="72" rx="18" fill="#fee2e2"/>
     <text x="812" y="220" fill="#0f172a">Release + Git LFS</text>
   </g>
-  <path d="M540 296 H998" stroke="#e2e8f0" stroke-width="2" opacity="0.55"/>
-  <text x="532" y="324" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Input -> Plate crop -> OCR -> Annotated result -> PC gate review</text>
+  <path d="M540 286 H998" stroke="#e2e8f0" stroke-width="2" opacity="0.55"/>
+  <text x="532" y="316" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Input -> Plate crop -> OCR -> Annotated result -> PC gate review</text>
+  <text x="532" y="346" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">Course prototype: academic validation, not production traffic enforcement.</text>
 </svg>
