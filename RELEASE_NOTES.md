@@ -1,23 +1,17 @@
-# NhapMonAI v1.0.3 - Reviewer-ready Vietnamese portfolio refresh
+# English Portfolio Refresh
 
-## Điểm mới
+## Main updates
 
-- Chuẩn hóa README tiếng Việt theo hướng đọc nhanh trong 5 phút cho HR, giảng viên và kỹ sư.
-- Bổ sung phần vai trò của Lương Hải Long, nêu rõ bối cảnh nhóm, phần đóng gói portfolio, phần app/demo liên quan và giới hạn nguyên mẫu.
-- Làm rõ metadata GitHub, topics trọng tâm và đường tải trực tiếp cho release assets.
-- Cập nhật thẻ SVG `alpr-review-card.svg` với chữ ASCII-safe để tránh lỗi hiển thị dấu tiếng Việt.
-- Bổ sung quy tắc `.gitattributes` cho Markdown, Typst, SVG, ảnh, GIF, PDF, PPTX và archive.
+- Rewrote the public README in English for HR and engineering review.
+- Standardized the repository summary, reviewer map, evidence highlights, scope boundaries and release/tag links.
+- Preserved an evidence-first tone: clear technical nouns, bounded claims and no production ownership beyond the repository material.
 
-## Tài sản release nên kiểm tra
+## Repository evidence
 
-- `Group5_BaoCaoSeminarNhapMonAI.pdf`
-- `Group5_SlideSeminarNhapMonAI.pptx`
-- `AppPythonYOLO_OCR.7z`
-- `AppPythonPlateGatePC.zip`
-- `alpr-pipeline-motion.gif`
-- `alpr-review-card.svg`
-- `NhapMonAI-source-v1.0.3.zip`
+- YOLO detector with reported mAP50 0.99450 on the project validation set.
+- OCR pipeline using FastALPR / fast-plate-ocr concepts with plate-crop normalization.
+- Python desktop app for image/video inference and a PlateGate PC LAN prototype with health and scan endpoints.
 
-## Ghi chú phạm vi
+## Scope
 
-Repo vẫn được trình bày như đồ án học thuật và nguyên mẫu kỹ thuật. Các chỉ số YOLO được đọc trong ngữ cảnh tập kiểm định của đồ án; phần OCR, app desktop và PlateGate PC là minh chứng triển khai demo, không tự nhận là hệ thống kiểm soát giao thông sản xuất.
+Academic team project and portfolio archive. The detector metrics are tied to the project validation set; the OCR and gate-control components are prototypes, not production traffic-enforcement systems.
