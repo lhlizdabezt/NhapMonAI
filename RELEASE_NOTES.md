@@ -1,26 +1,36 @@
-# v1.0.4 - English Line-Free Portfolio Refresh
+# v1.1.0 - Evidence-First Portfolio Release
 
-## Scope
+## Purpose
 
-This release refreshes `NhapMonAI` for US English HR and engineering review. The public README, release notes, captions, visible SVG text and visual asset labels are written in English and keep project claims tied to repository evidence.
+This release provides a concise, US English portfolio record of the Group 05 Vietnamese automatic license plate recognition project. Technical claims remain tied to notebooks, source code, model outputs, reports, screenshots, and versioned release assets.
 
-## Main Updates
+## Updates
 
-- Rewrote the README in US English with a five-minute review path, project profile, evidence map, system overview, quantitative results, run instructions, FAQ, team table and contact table.
-- Regenerated the ALPR motion GIF as a line-free English asset with no animated connector lines, dotted paths or curved paths.
-- Kept SVG-visible text ASCII-safe and English-only.
-- Removed the remaining horizontal separator line from the SVG reviewer card so labels do not sit behind decorative paths.
-- Preserved honest academic scope: team project, validation-set detector metrics, LAN prototype and no production traffic-enforcement claim.
-- Added release-facing notes for report, slide, app archive, PlateGate PC archive, GIF, SVG and source snapshot review assets.
+- Reorganized the README around project scope, verified contribution, system pipeline, detector metrics, reproducibility, limitations, and reviewable evidence.
+- Expanded the evidence gallery from four to eight repository images covering desktop inference, training curves, the confusion matrix, OCR, checkpoint continuation, and PlateGate demonstrations.
+- Preserved the complete tracked project tree, including notebooks, Python applications, Typst sources, PDF and PPTX deliverables, checkpoints, archives, and report images.
+- Kept large binaries under Git LFS and verified the local LFS object store.
+- Kept all visible SVG text in ASCII-safe English and retained line-free SVG/GIF layouts so decorative paths cannot obstruct labels.
+- Preserved the academic boundary: validation-set detector metrics and a LAN prototype do not establish production OCR or traffic-enforcement performance.
 
-## Repository Evidence
+## Reported Detector Results
 
-- YOLO detector with reported mAP50 `0.99450` on the project validation set.
-- OCR path using FastALPR / fast-plate-ocr concepts with plate-crop normalization.
-- Python desktop app for image and video inference.
-- PlateGate PC LAN prototype with `/health` and `/scan` endpoints on port `8765`.
-- Typst report, seminar PDF, PPTX slide deck, Kaggle/IPYNB notebooks and release-backed visual assets.
+| Metric | Validation Result |
+|---|---:|
+| Precision | `0.99448` |
+| Recall | `0.99373` |
+| mAP50 | `0.99450` |
+| mAP50-95 | `0.77006` |
+
+## Verification Record
+
+- Three Jupyter notebooks passed structural validation.
+- The Typst report compiled successfully from the tracked source.
+- Git LFS integrity checks passed for the designated large assets.
+- Python entry points passed static bytecode compilation.
+- The 44-page seminar PDF passed text extraction and sample-page visual inspection.
+- The repository images and 32-frame motion GIF passed visual inspection for clipping and label overlap.
 
 ## Scope Boundary
 
-This repository remains an academic computer vision prototype and portfolio archive. Detector metrics are tied to the project validation set; OCR and gate-control behavior are demonstration evidence, not proof of a production traffic-enforcement system.
+This repository is a public academic portfolio archive. Dataset permissions, environment-specific notebook paths, OCR limitations, and the absence of an open-source license remain documented in the README.

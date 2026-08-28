@@ -1,141 +1,117 @@
 # Vietnamese Automatic License Plate Recognition with YOLO and OCR
 
 <p align="center">
-  <img src="assets/portfolio-motion.svg" alt="Line-free English portfolio visual for NhapMonAI" width="900" />
+  <img src="assets/portfolio-motion.svg" alt="Vietnamese ALPR project overview" width="900" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/lhlizdabezt/NhapMonAI/releases/latest"><img src="https://img.shields.io/github/v/release/lhlizdabezt/NhapMonAI?style=for-the-badge&logo=github&label=Release" alt="Latest release for NhapMonAI" /></a>
-  <a href="https://github.com/lhlizdabezt/NhapMonAI/tags"><img src="https://img.shields.io/github/v/tag/lhlizdabezt/NhapMonAI?style=for-the-badge&logo=git&label=Tag" alt="Latest Git tag for NhapMonAI" /></a>
-  <img src="https://img.shields.io/badge/Language-English%20US-2563eb?style=for-the-badge" alt="README language is English United States" />
-  <img src="https://img.shields.io/badge/Review-HR%20and%20Engineering-0f766e?style=for-the-badge" alt="Prepared for HR and engineering review" />
+  <a href="https://github.com/lhlizdabezt/NhapMonAI/releases/latest"><img src="https://img.shields.io/github/v/release/lhlizdabezt/NhapMonAI?style=for-the-badge&logo=github&label=Release" alt="Latest NhapMonAI release" /></a>
+  <a href="https://github.com/lhlizdabezt/NhapMonAI/tags"><img src="https://img.shields.io/github/v/tag/lhlizdabezt/NhapMonAI?style=for-the-badge&logo=git&label=Tag" alt="Latest NhapMonAI tag" /></a>
+  <img src="https://img.shields.io/badge/Python-YOLO%20%7C%20OCR-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python YOLO and OCR" />
+  <img src="https://img.shields.io/badge/Status-Academic%20Prototype-0F766E?style=for-the-badge" alt="Academic prototype status" />
 </p>
 
 <p align="center">
-  <img src="assets/alpr-review-card.svg" alt="English reviewer card for YOLO OCR evidence in NhapMonAI" width="900" />
+  <img src="assets/alpr-review-card.svg" alt="Detector metrics and project evidence summary" width="900" />
 </p>
 
 <p align="center">
-  <img src="assets/alpr-pipeline-motion.gif" alt="Line-free animated GIF showing the NhapMonAI ALPR evidence stages" width="900" />
+  <img src="assets/alpr-pipeline-motion.gif" alt="Animated ALPR pipeline overview without connector lines" width="900" />
 </p>
 
-## Executive Summary
+## Project Summary
 
-`NhapMonAI` is an academic computer vision portfolio project for Vietnamese automatic license plate recognition. The repository combines YOLO/PyTorch plate detection, OCR/FastALPR recognition, Kaggle/IPYNB training evidence, a Python desktop inference application, a LAN-based PlateGate PC demo, Typst report sources, seminar materials, visual assets and release snapshots.
-
-The project is written for two audiences. HR reviewers can scan the repository quickly through the release, visuals, metrics and contact links. Engineering reviewers can trace the claims back to notebooks, source folders, checkpoints, screenshots, reports, release assets and bounded prototype notes.
-
-## Five-Minute Review Path
-
-| Step | What to Open | Why It Matters |
-|---|---|---|
-| 1 | Visuals at the top of this README | Shows the project scope without requiring a full source review |
-| 2 | [Release page](https://github.com/lhlizdabezt/NhapMonAI/releases/latest) | Provides a stable package of report files, demo assets and source snapshots |
-| 3 | [Quantitative Results](#quantitative-results) | Grounds the YOLO claim in validation-set metrics |
-| 4 | [Evidence Gallery](#evidence-gallery) | Shows the desktop app, video inference output, confusion matrix and gate-demo evidence |
-| 5 | [How to Run](#how-to-run) | Gives a practical path for running the Python app and LAN demo |
-
-## Project Profile
+`NhapMonAI` is a Group 05 course project for Vietnamese automatic license plate recognition. It combines a YOLO plate detector, OCR processing with FastALPR and fast-plate-ocr concepts, a Python desktop application, and a LAN-based PlateGate demonstration. The repository preserves the notebooks, checkpoints, source code, reports, presentation, screenshots, and versioned release assets used to review the work.
 
 | Field | Details |
 |---|---|
-| Repository | [lhlizdabezt/NhapMonAI](https://github.com/lhlizdabezt/NhapMonAI) |
-| Portfolio category | Computer vision, machine learning, OCR and Python desktop tooling |
-| Academic context | Introduction to Artificial Intelligence course project, Group 05, Faculty of Electronics and Telecommunications |
-| Maintainer profile | [Luong Hai Long](https://github.com/lhlizdabezt) |
-| Student ID | `22207056` |
-| School | VNUHCM - University of Science |
-| Primary stack | Python, PyTorch, Ultralytics YOLO, OpenCV, FastALPR, fast-plate-ocr, FFmpeg, Tkinter, Kaggle, IPYNB, Typst, Git LFS |
-| Latest release | [GitHub Releases](https://github.com/lhlizdabezt/NhapMonAI/releases/latest) |
-| Tags | [Version tags](https://github.com/lhlizdabezt/NhapMonAI/tags) |
+| Course | Introduction to Artificial Intelligence |
+| Faculty | Faculty of Electronics and Telecommunications, VNUHCM - University of Science |
+| Class context | `22DTV_CLC1`, Group 05 |
+| Status | Completed academic prototype and public portfolio archive |
+| Main stack | Python, PyTorch, Ultralytics YOLO, OpenCV, FastALPR, fast-plate-ocr, FFmpeg, Tkinter, Jupyter Notebook, Kaggle, Typst |
+| Maintainer | [Luong Hai Long](https://github.com/lhlizdabezt), Student ID `22207056` |
+| Stable package | [Latest GitHub release](https://github.com/lhlizdabezt/NhapMonAI/releases/latest) |
 
-## Evidence Highlights
+## Scope and Contribution
 
-| Evidence | Repository Material |
-|---|---|
-| Plate detector | YOLO/Ultralytics checkpoint and training outputs |
-| OCR path | FastALPR / fast-plate-ocr references, plate-crop normalization and Python post-processing |
-| Training trace | Kaggle notebook, local IPYNB files and checkpoint-continuation evidence |
-| Desktop demo | Python Tkinter/OpenCV/FFmpeg app for image and video inference |
-| Gate-control demo | PlateGate PC prototype with `/health` and `/scan` endpoints on port `8765` |
-| Documentation | Typst report sources, seminar PDF, PPTX slide deck, screenshots and release notes |
-| Portfolio packaging | English README, self-hosted visuals, GitHub release, tags, topics and Git LFS rules |
+This is a seven-member academic project. Luong Hai Long co-developed the Python desktop application and PlateGate PC demonstration, maintained the Kaggle training evidence, and prepared the public repository, release package, and visual documentation. The repository does not assign unverified individual contributions to other members.
 
-## Role and Scope
+The system is an academic prototype, not a production traffic-enforcement product. Reported metrics apply to the project validation set; they do not establish OCR accuracy or operational reliability under every camera, plate, weather, or lighting condition.
 
-| Item | Honest Scope |
-|---|---|
-| Team context | Academic team project with seven members |
-| Luong Hai Long's portfolio work | Maintained the public repository, normalized the README, release, tags, topics and visual evidence for review |
-| Luong Hai Long's development work | Co-developed the Python desktop app and PlateGate PC demo within the team context |
-| Prototype boundary | Academic dataset and LAN demo environment; not a production traffic-enforcement system |
-| Review value | Evidence for applied computer vision, Python tooling, technical documentation, release packaging and engineering communication |
-
-## System Overview
+## System Pipeline
 
 ```mermaid
 flowchart LR
-  A["Input image or video"] --> B["YOLO plate detector"]
-  B --> C["Plate crop"]
-  C --> D["OCR and normalization"]
-  D --> E["Annotated output"]
-  D --> F["PlateGate PC LAN demo"]
-  E --> G["Report and release evidence"]
-  F --> G
+  A[Image or video] --> B[YOLO plate detector]
+  B --> C[Plate crop]
+  C --> D[OCR and text normalization]
+  D --> E[Annotated result]
+  D --> F[PlateGate LAN demo]
 ```
 
-| Stage | Description |
+| Stage | Engineering Function |
 |---|---|
-| Input | User provides image or video data for plate detection |
-| Detection | YOLO model detects plate regions and returns bounding boxes |
-| Crop | Detected plate regions are extracted for downstream recognition |
-| OCR | FastALPR / fast-plate-ocr workflow reads and normalizes candidate text |
-| Output | The app renders annotated media and saves reviewable output files |
-| Gate demo | LAN prototype accepts recognized plate strings for allow-list checking |
+| Detection | Locates candidate license plates and returns bounding boxes |
+| Cropping | Extracts plate regions for OCR processing |
+| Recognition | Reads candidate text and applies project normalization rules |
+| Desktop output | Displays and saves annotated image or video results |
+| Gate demonstration | Sends a plate string to a local allow-list workflow over HTTP |
 
 ## Quantitative Results
 
-The final reported detector checkpoint from the continuation-training stage has the following validation-set metrics:
+The continuation-training checkpoint reports the following detector results on the project validation set:
 
-| Metric | Validation Result |
+| Metric | Result |
 |---|---:|
 | Precision | `0.99448` |
 | Recall | `0.99373` |
 | mAP50 | `0.99450` |
 | mAP50-95 | `0.77006` |
 
-These metrics describe the detector on the project validation set. They should not be read as a production guarantee for OCR accuracy, uncontrolled lighting, difficult camera angles, occluded plates or traffic-enforcement deployment.
+The detector metrics are not OCR metrics. Review the notebook outputs, confusion matrices, and report discussion before comparing these values with another dataset or deployment.
 
-## Evidence Gallery
+## Visual Evidence
 
-| Python Desktop App | YOLO and OCR Video Output |
+| Python Desktop Application | Video Inference Output |
 |---|---|
-| ![Python desktop app for Vietnamese license plate recognition](Group5_BaoCaoNhapMonAI/assets/python_gui.png) | ![Detected Vietnamese license plate output on video data](Group5_BaoCaoNhapMonAI/assets/video_yolo_ocr_fastalpr.png) |
+| ![Python desktop application for Vietnamese license plate recognition](Group5_BaoCaoNhapMonAI/assets/python_gui.png) | ![YOLO and OCR output on project video data](Group5_BaoCaoNhapMonAI/assets/video_yolo_ocr_fastalpr.png) |
 
-| Confusion Matrix | Gate Demo Evidence |
+| Continuation-Training Curves | Detector Confusion Matrix |
 |---|---|
-| ![YOLO confusion matrix for the project validation evidence](Group5_BaoCaoNhapMonAI/assets/confusion_matrix.png) | ![Android or PC gate-control demo evidence for recognized plate review](Group5_BaoCaoNhapMonAI/assets/android_gate_scan_demo.jpg) |
+| ![YOLO continuation-training result curves](Group5_BaoCaoNhapMonAI/assets/results_continue_v65.png) | ![YOLO detector confusion matrix](Group5_BaoCaoNhapMonAI/assets/confusion_matrix.png) |
 
-## Repository Structure
+| OCR Demonstration | Checkpoint Continuation Evidence |
+|---|---|
+| ![OCR demonstration on a detected Vietnamese license plate](Group5_BaoCaoNhapMonAI/assets/ocr_demo_01.png) | ![Training continuation from the project checkpoint](Group5_BaoCaoNhapMonAI/assets/25EpochContiniousCheckpoint.png) |
+
+| Mobile Scan Demonstration | PlateGate PC Demonstration |
+|---|---|
+| ![Mobile scan demonstration for the PlateGate workflow](Group5_BaoCaoNhapMonAI/assets/android_gate_scan_demo.jpg) | ![PlateGate PC allow-list control demonstration](Group5_BaoCaoNhapMonAI/assets/pc_gate_control_demo.png) |
+
+## Repository Guide
 
 ```text
 NhapMonAI/
-|-- Academic_Deliverables/             # Seminar slide deck and assignment evidence
-|-- AppPythonPlateGatePC/              # LAN PlateGate PC demo package
-|-- AppPythonYOLO_OCR/                 # Python YOLO/OCR app, outputs, FFmpeg and checkpoints
-|-- assets/                            # Self-hosted README visuals
-|-- Group5_BaoCaoNhapMonAI/            # Typst report source, figures and bibliography
-|-- Group5_Notebook_IPYNB/             # First-training and continuation-training notebooks
-|-- HinhAnhBaoCao/                     # Report and slide screenshots
-|-- Group5_BaoCaoSeminarNhapMonAI.pdf  # Final seminar report
-|-- RELEASE_NOTES.md                   # Release summary for the current portfolio snapshot
-|-- v65.pt                             # Main YOLO checkpoint
+|-- Academic_Deliverables/             # Assignment and seminar presentation files
+|-- AppPythonPlateGatePC/              # PlateGate PC LAN demonstration
+|-- AppPythonYOLO_OCR/                 # Desktop app, checkpoints, FFmpeg, notebooks, and outputs
+|-- assets/                            # English, line-free GitHub visuals
+|-- Group5_BaoCaoNhapMonAI/            # Typst report source, bibliography, and figures
+|-- Group5_Notebook_IPYNB/             # Initial and continuation-training notebooks
+|-- HinhAnhBaoCao/                     # Report and presentation screenshots
+|-- Group5_BaoCaoSeminarNhapMonAI.pdf  # Seminar report
+|-- Typst_Guide.pdf                    # Typst reference used with the report workflow
+|-- v65.pt                             # Detector checkpoint
+|-- RELEASE_NOTES.md                   # Current release scope and verification record
 `-- README.md
 ```
 
-## How to Run
+Large checkpoints, application archives, and FFmpeg executables are managed with Git LFS. Install Git LFS before cloning.
 
-Install Git LFS before cloning because the repository contains model checkpoints, app bundles and larger media assets.
+## Reproduce the Desktop Demonstration
+
+### 1. Clone the complete repository
 
 ```bash
 git lfs install
@@ -144,106 +120,100 @@ cd NhapMonAI
 git lfs pull
 ```
 
-Run the Python desktop app for image or video inference:
+### 2. Install the Python dependencies
 
 ```bash
 cd AppPythonYOLO_OCR
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+```
+
+### 3. Start the desktop application
+
+```bash
 python Group5_AppPython_YOLO_OCR.py
 ```
 
-Run the Windows batch launcher:
+Windows users may instead run `AppPythonYOLO_OCR/run_Group5_AppPython_YOLO_OCR.bat`.
 
-```bash
-cd AppPythonYOLO_OCR
-run_Group5_AppPython_YOLO_OCR.bat
-```
-
-Run the PlateGate PC LAN demo:
+### 4. Start the PlateGate PC demonstration
 
 ```bash
 cd AppPythonPlateGatePC/PlateGatePC
 python Group5_AppPYMoRongThucTe.py
 ```
 
-Check the demo endpoints after the PlateGate PC app is running:
+The local demonstration exposes `GET /health` and `POST /scan` on port `8765`. Its `bien_so_duoc_phep.txt` file provides the project allow list.
 
 ```powershell
 Invoke-RestMethod -Uri "http://127.0.0.1:8765/health"
 Invoke-RestMethod -Uri "http://127.0.0.1:8765/scan" -Method Post -ContentType "application/json" -Body '{"plate":"59A22256","score":0.99,"source":"manual-test"}'
 ```
 
-| Endpoint | Purpose |
+## Training Evidence and References
+
+| Resource | Purpose |
 |---|---|
-| `GET /health` | Confirms that the local demo server is running |
-| `POST /scan` | Sends a recognized plate string to the demo workflow |
-| Port `8765` | Default local LAN demo port |
-| `bien_so_duoc_phep.txt` | Allow-list file used by the PC gate demo |
+| [`Group5_Notebook01_FirstTraining.ipynb`](Group5_Notebook_IPYNB/Group5_Notebook01_FirstTraining.ipynb) | Initial YOLO training run |
+| [`Group5_Notebook02_ContinuationTraining.ipynb`](Group5_Notebook_IPYNB/Group5_Notebook02_ContinuationTraining.ipynb) | Continuation training from a checkpoint |
+| [`group-5-vietnamese-license-plates-detection-lhl.ipynb`](AppPythonYOLO_OCR/group-5-vietnamese-license-plates-detection-lhl.ipynb) | Kaggle-style training and output trace |
+| [Kaggle profile](https://www.kaggle.com/luonghailong/code) | Original training workspace; this repository keeps the stable notebook copy |
+| [Project dataset folder](https://drive.google.com/drive/folders/1xBDnh_NdHC5JePgazb0ZRDhu6Jpbo3sT?usp=drive_link) | Group dataset storage; access depends on sharing settings |
+| [FastALPR](https://github.com/ankandrew/fast-alpr) | ALPR framework reference |
+| [fast-plate-ocr](https://github.com/ankandrew/fast-plate-ocr) | OCR component reference |
 
-## Notebook, Dataset and References
+Paths in the notebooks reflect the original Kaggle or local environment and may require adjustment on another computer.
 
-| Source | Role | Notes |
-|---|---|---|
-| [Group 5 Kaggle notebook](https://www.kaggle.com/code/luonghailong/group-5-vietnamese-license-plates-detection-lhl) | Training and experiment trace | Paths may need adjustment outside the Kaggle environment |
-| [Dataset folder on Google Drive](https://drive.google.com/drive/folders/1xBDnh_NdHC5JePgazb0ZRDhu6Jpbo3sT?usp=drive_link) | Dataset storage used by the group | Access depends on the Drive sharing configuration |
-| [FastALPR](https://github.com/ankandrew/fast-alpr) | ALPR framework reference | Useful for comparing OCR and inference organization |
-| [fast-plate-ocr](https://github.com/ankandrew/fast-plate-ocr) | OCR-related reference | Useful when comparing or replacing OCR components |
+## Reports and Release Assets
 
-| Notebook in This Repository | Purpose |
+| Artifact | Review Purpose |
 |---|---|
-| `Group5_Notebook_IPYNB/Group5_Notebook01_FirstTraining.ipynb` | First YOLO training run from scratch |
-| `Group5_Notebook_IPYNB/Group5_Notebook02_ContinuationTraining.ipynb` | Continuation training from checkpoint |
-| `AppPythonYOLO_OCR/group-5-vietnamese-license-plates-detection-lhl.ipynb` | Kaggle-style notebook with runnable traces and outputs |
+| [Seminar report PDF](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/Group5_BaoCaoSeminarNhapMonAI.pdf) | Project objective, method, results, and limitations |
+| [Seminar slide deck](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/Group5_SlideSeminarNhapMonAI.pptx) | Course presentation artifact |
+| [Python app archive](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/AppPythonYOLO_OCR.7z) | Desktop inference application package |
+| [PlateGate PC archive](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/AppPythonPlateGatePC.zip) | LAN demonstration package |
+| [Motion GIF](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-pipeline-motion.gif) | Line-free animated project summary |
+| [Review card SVG](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-review-card.svg) | ASCII-safe detector and evidence summary |
+| [Portfolio SVG](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/portfolio-motion.svg) | English project overview for stable embeds |
 
-## GitHub Metadata
+## Limitations
 
-| Metadata Item | Current Intent |
-|---|---|
-| Repository description | Vietnamese ALPR portfolio project using YOLO/PyTorch and OCR/FastALPR, with Kaggle/IPYNB training evidence, desktop inference, LAN demo, reports and release-backed visuals |
-| Topics | `alpr`, `license-plate-recognition`, `vietnamese-license-plate`, `yolo`, `ocr`, `computer-vision`, `machine-learning`, `pytorch`, `opencv`, `kaggle`, `fast-alpr`, `object-detection`, `python`, `jupyter-notebook`, `git-lfs`, `tkinter`, `ffmpeg`, `typst`, `academic-project`, `hcmus` |
-| Release | [Latest release](https://github.com/lhlizdabezt/NhapMonAI/releases/latest) |
-| Tags | [Tag list](https://github.com/lhlizdabezt/NhapMonAI/tags) |
-| Main languages | Python, Jupyter Notebook, Typst |
-| Large assets | Managed with Git LFS where appropriate |
-
-## Release Assets
-
-| Asset | Review Use |
-|---|---|
-| [Seminar report PDF](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/Group5_BaoCaoSeminarNhapMonAI.pdf) | Read the project objective, method, results and limitations |
-| [Seminar slide deck](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/Group5_SlideSeminarNhapMonAI.pptx) | Review the class presentation artifact |
-| [Python YOLO/OCR app archive](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/AppPythonYOLO_OCR.7z) | Run or inspect the desktop inference application |
-| [PlateGate PC archive](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/AppPythonPlateGatePC.zip) | Inspect the LAN gate-control prototype |
-| [Line-free motion GIF](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-pipeline-motion.gif) | Visual reviewer aid with English labels and no animated connector lines |
-| [English SVG review card](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-review-card.svg) | ASCII-safe visual summary for profile embeds and release evidence |
-| [Line-free portfolio SVG](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/portfolio-motion.svg) | English profile visual with no moving dotted or curved lines |
-| Source snapshot | Versioned repository snapshot tied to the release tag |
+- Recognition quality depends on plate visibility, image resolution, viewing angle, lighting, occlusion, and plate layout.
+- Dataset access and notebook paths can require permission or local path changes.
+- The PlateGate component demonstrates a local LAN workflow; it is not a hardened access-control service.
+- The repository has no open-source license. Treat it as a public academic portfolio archive unless a license is added later.
 
 ## Frequently Asked Questions
 
-| Question | Answer |
-|---|---|
-| Is this a production traffic-enforcement product? | No. It is an academic prototype and portfolio archive with validation-set detector metrics and LAN demo evidence. |
-| What is the strongest engineering signal? | The project connects model training, OCR workflow, desktop inference, LAN demo behavior, documentation and release packaging. |
-| Where should reviewers start? | Start with the release page, this README, the quantitative results table and the visual evidence gallery. |
-| Why are releases and tags important here? | They preserve stable review snapshots for HR, faculty review and engineering inspection. |
-| Does the README use English only? | Yes. The public-facing README text, table labels, captions and SVG-visible text are written in US English. |
-| Why are the visuals line-free? | The current visual pass avoids animated connector lines, dotted paths and curved lines so text remains unobstructed in GitHub rendering. |
+**Is this a production ALPR system?**
+
+No. It is an academic detector, OCR, desktop inference, and LAN demonstration project.
+
+**Where should a reviewer begin?**
+
+Open the latest release, review the metric table and evidence gallery, then inspect the continuation-training notebook and seminar report.
+
+**Why are the GitHub visuals line-free?**
+
+The SVG and GIF assets avoid decorative connector paths so labels remain unobstructed at desktop and narrow widths.
+
+**Are all large files included?**
+
+Yes. The tracked repository contains the project subfolders and academic artifacts; Git LFS stores the designated large binaries and archives.
 
 ## Team
 
-| Student ID | Name | Portfolio Note |
+| Student ID | Name | Public Record |
 |---|---|---|
 | `22207043` | Mai Xuan Khang | Group 05 member |
 | `22207106` | Truong Quang Vu | Group 05 member |
 | `22207112` | Ly Phi Hung | Group 05 member |
 | `22207063` | Van Dinh Nam | Group 05 member |
 | `22207062` | Tran Si Nam | Group 05 member |
-| `22207056` | [Luong Hai Long](https://github.com/lhlizdabezt) | Repository maintenance, release packaging, Kaggle evidence, Python app contribution and portfolio documentation |
+| `22207056` | [Luong Hai Long](https://github.com/lhlizdabezt) | Repository maintenance, Kaggle evidence, Python app contribution, PlateGate contribution, release packaging, and portfolio documentation |
 | `22207066` | Le Tan Phi Pha | Group 05 member |
 
-## Maintainer Contact
+## Contact
 
 | Channel | Link |
 |---|---|
@@ -256,14 +226,3 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8765/scan" -Method Post -ContentType "a
 | Instagram | [instagram.com/lhlizdabezt](https://www.instagram.com/lhlizdabezt) |
 | YouTube | [youtube.com/@lhlizdabezt](https://www.youtube.com/@lhlizdabezt) |
 | TikTok | [tiktok.com/@wageseadrake](https://www.tiktok.com/@wageseadrake) |
-
-## Transparency Notes
-
-- The repository is an academic project archive and should be reviewed as evidence of technical workflow, not as a production deployment.
-- Dataset paths and Google Drive access can require permission or path changes outside the original environment.
-- OCR behavior depends on image quality, camera angle, lighting, occlusion, plate layout and post-processing rules.
-- The repository does not currently include a formal open-source license, so treat it as a public academic portfolio archive until a license is added.
-
-## Writing Standard
-
-This README uses an evidence-first Harvard/IEEE-style professional standard: direct technical nouns, bounded claims, reproducible links, release-backed assets and clear distinction between coursework, prototype behavior and production deployment.
