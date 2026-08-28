@@ -175,6 +175,7 @@ Paths in the notebooks reflect the original Kaggle or local environment and may 
 | [Motion GIF](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-pipeline-motion.gif) | Line-free animated project summary |
 | [Review card SVG](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/alpr-review-card.svg) | ASCII-safe detector and evidence summary |
 | [Portfolio SVG](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/portfolio-motion.svg) | English project overview for stable embeds |
+| [Source snapshot](https://github.com/lhlizdabezt/NhapMonAI/releases/latest/download/NhapMonAI-source-v1.1.2.zip) | Full tracked repository state, including Git LFS-backed project assets |
 
 ## Limitations
 
