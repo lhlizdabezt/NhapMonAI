@@ -35,7 +35,7 @@
     <rect x="784" y="176" width="222" height="72" rx="18" fill="#fee2e2"/>
     <text x="812" y="220" fill="#0f172a">Release + Git LFS</text>
   </g>
-  <rect x="532" y="286" width="502" height="72" rx="18" fill="#020617" opacity="0.22"/>
-  <text x="532" y="316" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Input -> Crop -> OCR -> Annotated output -> Gate review</text>
-  <text x="532" y="346" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">Course prototype: academic validation, not production traffic enforcement.</text>
+  <rect x="532" y="276" width="502" height="82" rx="18" fill="#020617" opacity="0.22"/>
+  <text x="783" y="309" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Input -> crop -> OCR -> annotated output -> review</text>
+  <text x="783" y="339" text-anchor="middle" fill="#bae6fd" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Course prototype; validation only, not traffic enforcement</text>
 </svg>

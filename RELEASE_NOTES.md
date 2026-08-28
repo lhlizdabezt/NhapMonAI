@@ -1,4 +1,4 @@
-# v1.1.0 - Evidence-First Portfolio Release
+# v1.1.1 - Evidence-First Portfolio Visual Fix
 
 ## Purpose
 
@@ -6,6 +6,7 @@ This release provides a concise, US English portfolio record of the Group 05 Vie
 
 ## Updates
 
+- Corrected the ALPR review-card footer by centering both lines, adding fixed side padding, and shortening the prototype boundary so neither line exceeds its panel.
 - Reorganized the README around project scope, verified contribution, system pipeline, detector metrics, reproducibility, limitations, and reviewable evidence.
 - Expanded the evidence gallery from four to eight repository images covering desktop inference, training curves, the confusion matrix, OCR, checkpoint continuation, and PlateGate demonstrations.
 - Preserved the complete tracked project tree, including notebooks, Python applications, Typst sources, PDF and PPTX deliverables, checkpoints, archives, and report images.
@@ -30,6 +31,7 @@ This release provides a concise, US English portfolio record of the Group 05 Vie
 - Python entry points passed static bytecode compilation.
 - The 44-page seminar PDF passed text extraction and sample-page visual inspection.
 - The repository images and 32-frame motion GIF passed visual inspection for clipping and label overlap.
+- The corrected ALPR review card passed native-width and scaled visual inspection with ASCII-safe English text.
 
 ## Scope Boundary
 
